@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E600049B1B1DAE2E0033B5F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600049A1B1DAE2E0033B5F2 /* AppDelegate.swift */; };
+		E600049D1B1DAE2E0033B5F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E600049C1B1DAE2E0033B5F2 /* ViewController.swift */; };
+		E60004A01B1DAE2E0033B5F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E600049E1B1DAE2E0033B5F2 /* Main.storyboard */; };
+		E60004A21B1DAE2E0033B5F2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E60004A11B1DAE2E0033B5F2 /* Images.xcassets */; };
+		E60004A51B1DAE2E0033B5F2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E60004A31B1DAE2E0033B5F2 /* LaunchScreen.xib */; };
+		E60004B11B1DAE2E0033B5F2 /* BlobExampleSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60004B01B1DAE2E0033B5F2 /* BlobExampleSwiftTests.swift */; };
+		E60004EA1B1DAE480033B5F2 /* AuthenticationCredential.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004BD1B1DAE480033B5F2 /* AuthenticationCredential.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004EB1B1DAE480033B5F2 /* CloudStorageClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004C01B1DAE480033B5F2 /* CloudStorageClient.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004EC1B1DAE480033B5F2 /* TableFetchRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004C21B1DAE480033B5F2 /* TableFetchRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004ED1B1DAE480033B5F2 /* Blob.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004C51B1DAE480033B5F2 /* Blob.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004EE1B1DAE480033B5F2 /* BlobContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004C71B1DAE480033B5F2 /* BlobContainer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004EF1B1DAE480033B5F2 /* Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004C91B1DAE480033B5F2 /* Queue.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F01B1DAE480033B5F2 /* QueueMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004CB1B1DAE480033B5F2 /* QueueMessage.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F11B1DAE480033B5F2 /* TableEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004CD1B1DAE480033B5F2 /* TableEntity.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F21B1DAE480033B5F2 /* SimpleBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004D21B1DAE480033B5F2 /* SimpleBase64.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F31B1DAE480033B5F2 /* CloudURLRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004D41B1DAE480033B5F2 /* CloudURLRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F41B1DAE480033B5F2 /* AtomPubEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004D81B1DAE480033B5F2 /* AtomPubEntry.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F51B1DAE480033B5F2 /* BlobParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004DA1B1DAE480033B5F2 /* BlobParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F61B1DAE480033B5F2 /* ContainerParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004DC1B1DAE480033B5F2 /* ContainerParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F71B1DAE480033B5F2 /* QueueMessageParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004DE1B1DAE480033B5F2 /* QueueMessageParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F81B1DAE480033B5F2 /* QueueParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004E01B1DAE480033B5F2 /* QueueParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004F91B1DAE480033B5F2 /* XmlHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004E21B1DAE480033B5F2 /* XmlHelper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004FA1B1DAE480033B5F2 /* AzureFilterBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004E51B1DAE480033B5F2 /* AzureFilterBuilder.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004FB1B1DAE480033B5F2 /* PredicateParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004E71B1DAE480033B5F2 /* PredicateParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004FC1B1DAE480033B5F2 /* PredicateParserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E60004E91B1DAE480033B5F2 /* PredicateParserAppDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E60004FE1B1DAE7C0033B5F2 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E60004FD1B1DAE7C0033B5F2 /* libxml2.2.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E60004AB1B1DAE2E0033B5F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E600048D1B1DAE2E0033B5F2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E60004941B1DAE2E0033B5F2;
+			remoteInfo = BlobExampleSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E60004951B1DAE2E0033B5F2 /* BlobExampleSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlobExampleSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60004991B1DAE2E0033B5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E600049A1B1DAE2E0033B5F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E600049C1B1DAE2E0033B5F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E600049F1B1DAE2E0033B5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E60004A11B1DAE2E0033B5F2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E60004A41B1DAE2E0033B5F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E60004AA1B1DAE2E0033B5F2 /* BlobExampleSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlobExampleSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E60004AF1B1DAE2E0033B5F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E60004B01B1DAE2E0033B5F2 /* BlobExampleSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobExampleSwiftTests.swift; sourceTree = "<group>"; };
+		E60004BC1B1DAE480033B5F2 /* AuthenticationCredential.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthenticationCredential.h; sourceTree = "<group>"; };
+		E60004BD1B1DAE480033B5F2 /* AuthenticationCredential.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthenticationCredential.m; sourceTree = "<group>"; };
+		E60004BF1B1DAE480033B5F2 /* CloudStorageClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudStorageClient.h; sourceTree = "<group>"; };
+		E60004C01B1DAE480033B5F2 /* CloudStorageClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudStorageClient.m; sourceTree = "<group>"; };
+		E60004C11B1DAE480033B5F2 /* TableFetchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableFetchRequest.h; sourceTree = "<group>"; };
+		E60004C21B1DAE480033B5F2 /* TableFetchRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableFetchRequest.m; sourceTree = "<group>"; };
+		E60004C41B1DAE480033B5F2 /* Blob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Blob.h; sourceTree = "<group>"; };
+		E60004C51B1DAE480033B5F2 /* Blob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Blob.m; sourceTree = "<group>"; };
+		E60004C61B1DAE480033B5F2 /* BlobContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobContainer.h; sourceTree = "<group>"; };
+		E60004C71B1DAE480033B5F2 /* BlobContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobContainer.m; sourceTree = "<group>"; };
+		E60004C81B1DAE480033B5F2 /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
+		E60004C91B1DAE480033B5F2 /* Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
+		E60004CA1B1DAE480033B5F2 /* QueueMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueMessage.h; sourceTree = "<group>"; };
+		E60004CB1B1DAE480033B5F2 /* QueueMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueMessage.m; sourceTree = "<group>"; };
+		E60004CC1B1DAE480033B5F2 /* TableEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableEntity.h; sourceTree = "<group>"; };
+		E60004CD1B1DAE480033B5F2 /* TableEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableEntity.m; sourceTree = "<group>"; };
+		E60004CF1B1DAE480033B5F2 /* AuthenticationCredential+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AuthenticationCredential+Private.h"; sourceTree = "<group>"; };
+		E60004D11B1DAE480033B5F2 /* SimpleBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleBase64.h; sourceTree = "<group>"; };
+		E60004D21B1DAE480033B5F2 /* SimpleBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SimpleBase64.m; sourceTree = "<group>"; };
+		E60004D31B1DAE480033B5F2 /* CloudURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudURLRequest.h; sourceTree = "<group>"; };
+		E60004D41B1DAE480033B5F2 /* CloudURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CloudURLRequest.m; sourceTree = "<group>"; };
+		E60004D51B1DAE480033B5F2 /* NSString+URLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncode.h"; sourceTree = "<group>"; };
+		E60004D71B1DAE480033B5F2 /* AtomPubEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtomPubEntry.h; sourceTree = "<group>"; };
+		E60004D81B1DAE480033B5F2 /* AtomPubEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtomPubEntry.m; sourceTree = "<group>"; };
+		E60004D91B1DAE480033B5F2 /* BlobParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlobParser.h; sourceTree = "<group>"; };
+		E60004DA1B1DAE480033B5F2 /* BlobParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlobParser.m; sourceTree = "<group>"; };
+		E60004DB1B1DAE480033B5F2 /* ContainerParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerParser.h; sourceTree = "<group>"; };
+		E60004DC1B1DAE480033B5F2 /* ContainerParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerParser.m; sourceTree = "<group>"; };
+		E60004DD1B1DAE480033B5F2 /* QueueMessageParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueMessageParser.h; sourceTree = "<group>"; };
+		E60004DE1B1DAE480033B5F2 /* QueueMessageParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueMessageParser.m; sourceTree = "<group>"; };
+		E60004DF1B1DAE480033B5F2 /* QueueParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueParser.h; sourceTree = "<group>"; };
+		E60004E01B1DAE480033B5F2 /* QueueParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueParser.m; sourceTree = "<group>"; };
+		E60004E11B1DAE480033B5F2 /* XmlHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlHelper.h; sourceTree = "<group>"; };
+		E60004E21B1DAE480033B5F2 /* XmlHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlHelper.m; sourceTree = "<group>"; };
+		E60004E41B1DAE480033B5F2 /* AzureFilterBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AzureFilterBuilder.h; sourceTree = "<group>"; };
+		E60004E51B1DAE480033B5F2 /* AzureFilterBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AzureFilterBuilder.m; sourceTree = "<group>"; };
+		E60004E61B1DAE480033B5F2 /* PredicateParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateParser.h; sourceTree = "<group>"; };
+		E60004E71B1DAE480033B5F2 /* PredicateParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateParser.m; sourceTree = "<group>"; };
+		E60004E81B1DAE480033B5F2 /* PredicateParserAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PredicateParserAppDelegate.h; sourceTree = "<group>"; };
+		E60004E91B1DAE480033B5F2 /* PredicateParserAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PredicateParserAppDelegate.m; sourceTree = "<group>"; };
+		E60004FD1B1DAE7C0033B5F2 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
+		E60004FF1B1DAF7B0033B5F2 /* BlobExampleSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlobExampleSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E60004921B1DAE2E0033B5F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60004FE1B1DAE7C0033B5F2 /* libxml2.2.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60004A71B1DAE2E0033B5F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E600048C1B1DAE2E0033B5F2 = {
+			isa = PBXGroup;
+			children = (
+				E60004BA1B1DAE480033B5F2 /* Library */,
+				E60004971B1DAE2E0033B5F2 /* BlobExampleSwift */,
+				E60004AD1B1DAE2E0033B5F2 /* BlobExampleSwiftTests */,
+				E60004961B1DAE2E0033B5F2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E60004961B1DAE2E0033B5F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E60004951B1DAE2E0033B5F2 /* BlobExampleSwift.app */,
+				E60004AA1B1DAE2E0033B5F2 /* BlobExampleSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E60004971B1DAE2E0033B5F2 /* BlobExampleSwift */ = {
+			isa = PBXGroup;
+			children = (
+				E600049A1B1DAE2E0033B5F2 /* AppDelegate.swift */,
+				E600049C1B1DAE2E0033B5F2 /* ViewController.swift */,
+				E600049E1B1DAE2E0033B5F2 /* Main.storyboard */,
+				E60004A11B1DAE2E0033B5F2 /* Images.xcassets */,
+				E60004A31B1DAE2E0033B5F2 /* LaunchScreen.xib */,
+				E60004981B1DAE2E0033B5F2 /* Supporting Files */,
+			);
+			path = BlobExampleSwift;
+			sourceTree = "<group>";
+		};
+		E60004981B1DAE2E0033B5F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E60004FD1B1DAE7C0033B5F2 /* libxml2.2.dylib */,
+				E60004FF1B1DAF7B0033B5F2 /* BlobExampleSwift-Bridging-Header.h */,
+				E60004991B1DAE2E0033B5F2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E60004AD1B1DAE2E0033B5F2 /* BlobExampleSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				E60004B01B1DAE2E0033B5F2 /* BlobExampleSwiftTests.swift */,
+				E60004AE1B1DAE2E0033B5F2 /* Supporting Files */,
+			);
+			path = BlobExampleSwiftTests;
+			sourceTree = "<group>";
+		};
+		E60004AE1B1DAE2E0033B5F2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E60004AF1B1DAE2E0033B5F2 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E60004BA1B1DAE480033B5F2 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E60004BB1B1DAE480033B5F2 /* Authentication */,
+				E60004BE1B1DAE480033B5F2 /* Cloud Storage */,
+				E60004C31B1DAE480033B5F2 /* Model */,
+				E60004CE1B1DAE480033B5F2 /* Private */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		E60004BB1B1DAE480033B5F2 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				E60004BC1B1DAE480033B5F2 /* AuthenticationCredential.h */,
+				E60004BD1B1DAE480033B5F2 /* AuthenticationCredential.m */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		E60004BE1B1DAE480033B5F2 /* Cloud Storage */ = {
+			isa = PBXGroup;
+			children = (
+				E60004BF1B1DAE480033B5F2 /* CloudStorageClient.h */,
+				E60004C01B1DAE480033B5F2 /* CloudStorageClient.m */,
+				E60004C11B1DAE480033B5F2 /* TableFetchRequest.h */,
+				E60004C21B1DAE480033B5F2 /* TableFetchRequest.m */,
+			);
+			path = "Cloud Storage";
+			sourceTree = "<group>";
+		};
+		E60004C31B1DAE480033B5F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E60004C41B1DAE480033B5F2 /* Blob.h */,
+				E60004C51B1DAE480033B5F2 /* Blob.m */,
+				E60004C61B1DAE480033B5F2 /* BlobContainer.h */,
+				E60004C71B1DAE480033B5F2 /* BlobContainer.m */,
+				E60004C81B1DAE480033B5F2 /* Queue.h */,
+				E60004C91B1DAE480033B5F2 /* Queue.m */,
+				E60004CA1B1DAE480033B5F2 /* QueueMessage.h */,
+				E60004CB1B1DAE480033B5F2 /* QueueMessage.m */,
+				E60004CC1B1DAE480033B5F2 /* TableEntity.h */,
+				E60004CD1B1DAE480033B5F2 /* TableEntity.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E60004CE1B1DAE480033B5F2 /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				E60004CF1B1DAE480033B5F2 /* AuthenticationCredential+Private.h */,
+				E60004D01B1DAE480033B5F2 /* Base64 */,
+				E60004D31B1DAE480033B5F2 /* CloudURLRequest.h */,
+				E60004D41B1DAE480033B5F2 /* CloudURLRequest.m */,
+				E60004D51B1DAE480033B5F2 /* NSString+URLEncode.h */,
+				E60004D61B1DAE480033B5F2 /* Parser */,
+				E60004E31B1DAE480033B5F2 /* PredicateConverter */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		E60004D01B1DAE480033B5F2 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				E60004D11B1DAE480033B5F2 /* SimpleBase64.h */,
+				E60004D21B1DAE480033B5F2 /* SimpleBase64.m */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		E60004D61B1DAE480033B5F2 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				E60004D71B1DAE480033B5F2 /* AtomPubEntry.h */,
+				E60004D81B1DAE480033B5F2 /* AtomPubEntry.m */,
+				E60004D91B1DAE480033B5F2 /* BlobParser.h */,
+				E60004DA1B1DAE480033B5F2 /* BlobParser.m */,
+				E60004DB1B1DAE480033B5F2 /* ContainerParser.h */,
+				E60004DC1B1DAE480033B5F2 /* ContainerParser.m */,
+				E60004DD1B1DAE480033B5F2 /* QueueMessageParser.h */,
+				E60004DE1B1DAE480033B5F2 /* QueueMessageParser.m */,
+				E60004DF1B1DAE480033B5F2 /* QueueParser.h */,
+				E60004E01B1DAE480033B5F2 /* QueueParser.m */,
+				E60004E11B1DAE480033B5F2 /* XmlHelper.h */,
+				E60004E21B1DAE480033B5F2 /* XmlHelper.m */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		E60004E31B1DAE480033B5F2 /* PredicateConverter */ = {
+			isa = PBXGroup;
+			children = (
+				E60004E41B1DAE480033B5F2 /* AzureFilterBuilder.h */,
+				E60004E51B1DAE480033B5F2 /* AzureFilterBuilder.m */,
+				E60004E61B1DAE480033B5F2 /* PredicateParser.h */,
+				E60004E71B1DAE480033B5F2 /* PredicateParser.m */,
+				E60004E81B1DAE480033B5F2 /* PredicateParserAppDelegate.h */,
+				E60004E91B1DAE480033B5F2 /* PredicateParserAppDelegate.m */,
+			);
+			path = PredicateConverter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E60004941B1DAE2E0033B5F2 /* BlobExampleSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60004B41B1DAE2E0033B5F2 /* Build configuration list for PBXNativeTarget "BlobExampleSwift" */;
+			buildPhases = (
+				E60004911B1DAE2E0033B5F2 /* Sources */,
+				E60004921B1DAE2E0033B5F2 /* Frameworks */,
+				E60004931B1DAE2E0033B5F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlobExampleSwift;
+			productName = BlobExampleSwift;
+			productReference = E60004951B1DAE2E0033B5F2 /* BlobExampleSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E60004A91B1DAE2E0033B5F2 /* BlobExampleSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E60004B71B1DAE2E0033B5F2 /* Build configuration list for PBXNativeTarget "BlobExampleSwiftTests" */;
+			buildPhases = (
+				E60004A61B1DAE2E0033B5F2 /* Sources */,
+				E60004A71B1DAE2E0033B5F2 /* Frameworks */,
+				E60004A81B1DAE2E0033B5F2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E60004AC1B1DAE2E0033B5F2 /* PBXTargetDependency */,
+			);
+			name = BlobExampleSwiftTests;
+			productName = BlobExampleSwiftTests;
+			productReference = E60004AA1B1DAE2E0033B5F2 /* BlobExampleSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E600048D1B1DAE2E0033B5F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Ajay Ghodadra";
+				TargetAttributes = {
+					E60004941B1DAE2E0033B5F2 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					E60004A91B1DAE2E0033B5F2 = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = E60004941B1DAE2E0033B5F2;
+					};
+				};
+			};
+			buildConfigurationList = E60004901B1DAE2E0033B5F2 /* Build configuration list for PBXProject "BlobExampleSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E600048C1B1DAE2E0033B5F2;
+			productRefGroup = E60004961B1DAE2E0033B5F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E60004941B1DAE2E0033B5F2 /* BlobExampleSwift */,
+				E60004A91B1DAE2E0033B5F2 /* BlobExampleSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E60004931B1DAE2E0033B5F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60004A01B1DAE2E0033B5F2 /* Main.storyboard in Resources */,
+				E60004A51B1DAE2E0033B5F2 /* LaunchScreen.xib in Resources */,
+				E60004A21B1DAE2E0033B5F2 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60004A81B1DAE2E0033B5F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E60004911B1DAE2E0033B5F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E600049D1B1DAE2E0033B5F2 /* ViewController.swift in Sources */,
+				E60004EE1B1DAE480033B5F2 /* BlobContainer.m in Sources */,
+				E60004F81B1DAE480033B5F2 /* QueueParser.m in Sources */,
+				E60004EC1B1DAE480033B5F2 /* TableFetchRequest.m in Sources */,
+				E60004F51B1DAE480033B5F2 /* BlobParser.m in Sources */,
+				E600049B1B1DAE2E0033B5F2 /* AppDelegate.swift in Sources */,
+				E60004FB1B1DAE480033B5F2 /* PredicateParser.m in Sources */,
+				E60004F21B1DAE480033B5F2 /* SimpleBase64.m in Sources */,
+				E60004F91B1DAE480033B5F2 /* XmlHelper.m in Sources */,
+				E60004F71B1DAE480033B5F2 /* QueueMessageParser.m in Sources */,
+				E60004F61B1DAE480033B5F2 /* ContainerParser.m in Sources */,
+				E60004FC1B1DAE480033B5F2 /* PredicateParserAppDelegate.m in Sources */,
+				E60004EB1B1DAE480033B5F2 /* CloudStorageClient.m in Sources */,
+				E60004F11B1DAE480033B5F2 /* TableEntity.m in Sources */,
+				E60004F31B1DAE480033B5F2 /* CloudURLRequest.m in Sources */,
+				E60004F41B1DAE480033B5F2 /* AtomPubEntry.m in Sources */,
+				E60004ED1B1DAE480033B5F2 /* Blob.m in Sources */,
+				E60004EA1B1DAE480033B5F2 /* AuthenticationCredential.m in Sources */,
+				E60004EF1B1DAE480033B5F2 /* Queue.m in Sources */,
+				E60004FA1B1DAE480033B5F2 /* AzureFilterBuilder.m in Sources */,
+				E60004F01B1DAE480033B5F2 /* QueueMessage.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E60004A61B1DAE2E0033B5F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E60004B11B1DAE2E0033B5F2 /* BlobExampleSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E60004AC1B1DAE2E0033B5F2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E60004941B1DAE2E0033B5F2 /* BlobExampleSwift */;
+			targetProxy = E60004AB1B1DAE2E0033B5F2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E600049E1B1DAE2E0033B5F2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E600049F1B1DAE2E0033B5F2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E60004A31B1DAE2E0033B5F2 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E60004A41B1DAE2E0033B5F2 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E60004B21B1DAE2E0033B5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E60004B31B1DAE2E0033B5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E60004B51B1DAE2E0033B5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = BlobExampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ajay.ghodadra/Desktop/BlobExampleSwift/BlobExampleSwift/BlobExampleSwift-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		E60004B61B1DAE2E0033B5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SDKROOT)/usr/include/libxml2",
+				);
+				INFOPLIST_FILE = BlobExampleSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/ajay.ghodadra/Desktop/BlobExampleSwift/BlobExampleSwift/BlobExampleSwift-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		E60004B81B1DAE2E0033B5F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlobExampleSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlobExampleSwift.app/BlobExampleSwift";
+			};
+			name = Debug;
+		};
+		E60004B91B1DAE2E0033B5F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BlobExampleSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlobExampleSwift.app/BlobExampleSwift";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E60004901B1DAE2E0033B5F2 /* Build configuration list for PBXProject "BlobExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60004B21B1DAE2E0033B5F2 /* Debug */,
+				E60004B31B1DAE2E0033B5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E60004B41B1DAE2E0033B5F2 /* Build configuration list for PBXNativeTarget "BlobExampleSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60004B51B1DAE2E0033B5F2 /* Debug */,
+				E60004B61B1DAE2E0033B5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E60004B71B1DAE2E0033B5F2 /* Build configuration list for PBXNativeTarget "BlobExampleSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E60004B81B1DAE2E0033B5F2 /* Debug */,
+				E60004B91B1DAE2E0033B5F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E600048D1B1DAE2E0033B5F2 /* Project object */;
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="BlobExampleSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPd-wi-jMP">
+                                <rect key="frame" x="137" y="28" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="anF-T4-4ge"/>
+                                    <constraint firstAttribute="width" constant="46" id="oKZ-N6-lLK"/>
+                                </constraints>
+                                <state key="normal" title="Get">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="getBlob:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="3Ot-7K-Ei1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhj-yE-oBt">
+                                <rect key="frame" x="137" y="82" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nm7-mR-xJ9"/>
+                                    <constraint firstAttribute="width" constant="46" id="uCl-My-CKf"/>
+                                </constraints>
+                                <state key="normal" title="Add">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addBlob:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t9z-Qo-i0E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yo0-6S-kGJ">
+                                <rect key="frame" x="137" y="131" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="NgO-1U-gTD"/>
+                                    <constraint firstAttribute="height" constant="30" id="XI9-et-qqE"/>
+                                </constraints>
+                                <state key="normal" title="Delete">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteBlob:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NaZ-8q-g45"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="yo0-6S-kGJ" secondAttribute="centerX" id="3xt-0W-wZv"/>
+                            <constraint firstItem="Lhj-yE-oBt" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="62" id="EHO-Kn-la0"/>
+                            <constraint firstAttribute="centerX" secondItem="Lhj-yE-oBt" secondAttribute="centerX" id="J55-LG-0L4"/>
+                            <constraint firstAttribute="centerX" secondItem="qPd-wi-jMP" secondAttribute="centerX" id="WOL-2y-Dkt"/>
+                            <constraint firstItem="qPd-wi-jMP" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="YAP-ue-REi"/>
+                            <constraint firstItem="yo0-6S-kGJ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="111" id="lrp-ep-bl6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="210" y="237"/>
+        </scene>
+    </scenes>
+</document>
